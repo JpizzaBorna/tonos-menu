@@ -1,0 +1,3375 @@
+{
+ "currency": "AED",
+ "menus": [
+  {
+   "id": "food",
+   "title": "Food Menu",
+   "subtitle": "Greek · Mediterranean kitchen",
+   "categories": [
+    {
+     "id": "breakfast",
+     "name": "Breakfast",
+     "items": [
+      {
+       "id": "food-english-breakfast",
+       "name": "English Breakfast",
+       "description": "Eggs, sausage, baked beans, guacamole, cherry tomatoes, mushroom, hashbrown, mustard and sourdough.",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-english-breakfast.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-english-breakfast.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-russian-breaky",
+       "name": "Russian Breaky",
+       "description": "Crepe, smoked salmon, eggs, guacamole, sour cream, caviar, potato and zucchini patty with mix greens.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-russian-breaky.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-russian-breaky.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-betroot-labneh-on-toast",
+       "name": "Beetroot Labneh on Toast",
+       "description": "Avocado serve with beetroot labneh with mixed salad and mixed nuts",
+       "price": {
+        "min": 68,
+        "max": 68,
+        "label": "68"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-betroot-labneh-on-toast.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-betroot-labneh-on-toast.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-shrimp-avo-toast",
+       "name": "Shrimp Avo Toast",
+       "description": "Sourdough, guacamole, shrimp, feta cheese topped with basil leaves and kale with tomato on the side.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-shrimp-avo-toast.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-shrimp-avo-toast.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-tuna-avo-toast",
+       "name": "Tuna Avo Toast",
+       "description": "Sourdough, guacamole, tuna, sesame seeds, chili flakes, teriyaki sauce and Sakura leaves.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-tuna-avo-toast.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-tuna-avo-toast.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-avocado-benedict",
+       "name": "Avocado Benedict",
+       "description": "Sourdough, guacamole, eggs, cherry tomatoes, hollandaise sauce topped with mix Sakura leaves.",
+       "price": {
+        "min": 68,
+        "max": 68,
+        "label": "68"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-avocado-benedict.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-avocado-benedict.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-egg-omelet",
+       "name": "Egg Omelette",
+       "description": "Button mushroom, spinach, cherry tomato, lolo rosso, Sakura and olive oil.",
+       "price": {
+        "min": 49,
+        "max": 49,
+        "label": "49"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-egg-omelet.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-egg-omelet.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-shrimp-omelette",
+       "name": "Shrimp Omelette",
+       "description": "Savor the perfect Shrimp Omelette, draped in velvety hollandaise, adorned with tender shrimp and exquisite salmon caviar. Paired with crisp, artisanal sliced bread, this dish promises a luxurious symphony of flavors and textures.",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-shrimp-omelette.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-shrimp-omelette.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-egg-with-soujuk",
+       "name": "Egg with Soujuk",
+       "description": "Savor the rich, smoky allure of savory soujuk wrapped in fluffy eggs, sprinkled with a pinch of fiery chili flakes and aromatic oregano. Enjoy the crispy delight of simit bread on the side, perfect for mopping up every last morsel.",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-egg-with-soujuk.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-egg-with-soujuk.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-shakshouka",
+       "name": "Shakshouka",
+       "description": "Tomato, red capsicum, feta cheese, eggs, kalamata, basil - serve with sourdough bread",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-shakshouka.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-shakshouka.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-croissant-benedict",
+       "name": "Croissant Benedict",
+       "description": "Plain croissant, portabella mushroom, eggs, truffle, hollandaise sauce garnished with sakura and chives.",
+       "price": {
+        "min": 53,
+        "max": 53,
+        "label": "53"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-croissant-benedict.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-croissant-benedict.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-royal-salmon-benedict",
+       "name": "Royal Salmon Benedict",
+       "description": "Croissant, smoked salmon, eggs, hollandaise sauce, spinach, capsicum with Sakura leaves.",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-royal-salmon-benedict.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-royal-salmon-benedict.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-zataar-croissant",
+       "name": "Za'atar Croissant",
+       "description": "",
+       "price": {
+        "min": 17,
+        "max": 17,
+        "label": "17"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-zataar-croissant.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-zataar-croissant.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-butter-croissant",
+       "name": "Butter Croissant",
+       "description": "",
+       "price": {
+        "min": 15,
+        "max": 15,
+        "label": "15"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-butter-croissant.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-butter-croissant.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-cheese-croissant",
+       "name": "Cheese Croissant",
+       "description": "",
+       "price": {
+        "min": 23,
+        "max": 23,
+        "label": "23"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-cheese-croissant.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-cheese-croissant.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-almond-croissant",
+       "name": "Almond Croissant",
+       "description": "",
+       "price": {
+        "min": 23,
+        "max": 23,
+        "label": "23"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-almond-croissant.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-almond-croissant.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-tonos-syrniki",
+       "name": "Tonos Syrniki",
+       "description": "Syrniki, mix berry jam, sour cream, mix berries and mint",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-tonos-syrniki.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-tonos-syrniki.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-acai-bowl",
+       "name": "Acai Bowl",
+       "description": "Healthy acai topped with mixed berries, granola, coconut flakes and creamy peanut butter.",
+       "price": {
+        "min": 69,
+        "max": 69,
+        "label": "69"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-acai-bowl.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-acai-bowl.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-crepe",
+       "name": "Crepe",
+       "description": "Flour, butter, milk, chocolate sauce, mix berries, icing sugar, mint leaves",
+       "price": {
+        "min": 49,
+        "max": 49,
+        "label": "49"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-crepe.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-crepe.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-crepe-salmon",
+       "name": "Crepe Salmon",
+       "description": "Freshly made crepe, smoked salmon, sour cream topped with salmon caviar.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-crepe-salmon.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-crepe-salmon.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "soup",
+     "name": "Soup",
+     "items": [
+      {
+       "id": "food-red-borsch-soup",
+       "name": "Red Borsch Soup",
+       "description": "Beetroot, potato, carrot, cabbage with beef. Served with sliced bread and sour cream on the side.",
+       "price": {
+        "min": 58,
+        "max": 58,
+        "label": "58"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-red-borsch-soup.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-red-borsch-soup.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-mushroom-soup",
+       "name": "Mushroom Soup",
+       "description": "Mushroom soup served with croutons on the side.",
+       "price": {
+        "min": 58,
+        "max": 58,
+        "label": "58"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-mushroom-soup.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-mushroom-soup.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-lentil-soup",
+       "name": "Lentil Soup",
+       "description": "Lentil soup served with croutons and lemon on the side.",
+       "price": {
+        "min": 45,
+        "max": 45,
+        "label": "45"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-lentil-soup.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-lentil-soup.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-tomato-soup",
+       "name": "Tomato Soup",
+       "description": "fresh tomatoes onion, carrots, celery served with crispy croutons and lemon wedges",
+       "price": {
+        "min": 45,
+        "max": 45,
+        "label": "45"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-tomato-soup.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-tomato-soup.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "salads",
+     "name": "Salads",
+     "items": [
+      {
+       "id": "food-mixed-garden-salad-with-roasted-sesame-dressing",
+       "name": "Mixed Garden Salad with Roasted Sesame Dressing",
+       "description": "Crisp mixed greens, juicy cherry tomatoes, crunchy cucumbers, and vibrant carrots are elegantly tossed with a nutty, aromatic roasted sesame dressing. A symphony of flavors and textures, this salad offers a refreshing, delicious bite in every forkful.",
+       "price": {
+        "min": 45,
+        "max": 45,
+        "label": "45"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-mixed-garden-salad-with-roasted-sesame-dressing.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-mixed-garden-salad-with-roasted-sesame-dressing.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-classic-greek-salad",
+       "name": "Classic Greek Salad",
+       "description": "A bright take on the classic: cherry tomatoes, feta, crisp cucumber, grilled bell peppers, lemon juice drops, Kalamata olives, oregano and extra-virgin olive oil.",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-classic-greek-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-classic-greek-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": true
+      },
+      {
+       "id": "food-vineyard-fig-couscous-salad",
+       "name": "Vineyard Fig & Couscous Salad",
+       "description": "Crisp mix leaves and baby gem tossed with spicy couscous and a sun-sweet raisin dressing, caramelized fig fillets and delicate Gruyere flakes for a lush, island-style finish.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-vineyard-fig-couscous-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-vineyard-fig-couscous-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": true
+      },
+      {
+       "id": "food-shrimp-caesar-salad",
+       "name": "Shrimp Caesar Salad",
+       "description": "Grilled Shrimp serve with baby gem, sweet corn curtains, caesar dressing and sweet corn",
+       "price": {
+        "min": 70,
+        "max": 70,
+        "label": "70"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-shrimp-caesar-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-shrimp-caesar-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-quinoa-salad",
+       "name": "Quinoa Salad",
+       "description": "Kale, pomegranate molasses, cherry tomatoes, broccoli quinoa, walnut, avocado, vinaigrette, eggs, feta cheese and grilled chicken.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-quinoa-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-quinoa-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-chicken-garden-salad",
+       "name": "Chicken Garden Salad",
+       "description": "Savor the succulent char-grilled chicken fillet atop fluffy quinoa, creamy avocado, and crisp garden lettuce, elegantly tossed in a fragrant Greek thyme-honey dressing, with a vibrant finish of tangy sumac.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-garden-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-garden-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-yoga-bowl",
+       "name": "Yoga Bowl",
+       "description": "Your choice, chicken or salmon or shrimp serve with fried zucchini, cherry tomato, Tzatziki, quinoa, avocado, vinaigrette dressing",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-yoga-bowl.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-yoga-bowl.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-oliver-salad",
+       "name": "Oliver Salad",
+       "description": "Indulge in our Oliver Salad, featuring crisp carrots and tender potatoes mingled with luxurious, homemade mayo. Enhanced with succulent rib eye wagyu beef, each forkful offers a perfect harmony of creamy richness and refreshing crunch.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-oliver-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-oliver-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-oliver-salmon-salad",
+       "name": "Oliver Salmon Salad",
+       "description": "carrot - potatoes - fresh salmon and roasted sesame dressing",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-oliver-salmon-salad.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-oliver-salmon-salad.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "sandwiches",
+     "name": "Sandwiches",
+     "items": [
+      {
+       "id": "food-chicken-quesadilla",
+       "name": "Chicken Quesadilla",
+       "description": "Tortilla wrap, grilled chicken, capsicum, cheddar, mozzarella cheese, sweet corn with fries on the side.",
+       "price": {
+        "min": 62,
+        "max": 62,
+        "label": "62"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-quesadilla.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-quesadilla.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-halloumi-sandwich",
+       "name": "Halloumi Sandwich",
+       "description": "Ciabatta bread, halloumi, tomato, cucumber, pesto sauce, with fries on the side.",
+       "price": {
+        "min": 62,
+        "max": 62,
+        "label": "62"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-halloumi-sandwich.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-halloumi-sandwich.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-chicken-wrap",
+       "name": "Chicken Wrap",
+       "description": "Chicken with fajita spicy three-colour capsicum sweet corn cheddar cheese",
+       "price": {
+        "min": 62,
+        "max": 62,
+        "label": "62"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-wrap.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-wrap.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "appetizers-cold-and-hot",
+     "name": "Appetizers Cold and Hot",
+     "items": [
+      {
+       "id": "food-mezze-platter",
+       "name": "Mezze Platter",
+       "description": "A selection of greek specialties spreads to share: Taramasalata, tzatziki, Kalamata olives, Eggplant salad, Spicy feta, beetroot salad and freshly baked & charcoaled grilled sourdough bread.",
+       "price": {
+        "min": 70,
+        "max": 70,
+        "label": "70"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-mezze-platter.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-mezze-platter.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-homemade-tzatziki",
+       "name": "Homemade Tzatziki",
+       "description": "Classic Combination of Greek Yoghurt, Cucumber",
+       "price": {
+        "min": 40,
+        "max": 40,
+        "label": "40"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-homemade-tzatziki.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-homemade-tzatziki.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-marinated-olives",
+       "name": "Marinated Olives",
+       "description": "Olive Mix, Lemon, Orange, thyme",
+       "price": {
+        "min": 45,
+        "max": 45,
+        "label": "45"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-marinated-olives.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-marinated-olives.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-zucchini-herb-fritters",
+       "name": "Zucchini Herb Fritters",
+       "description": "Crisp-on-the-outside zucchini and fresh-herb fritters, tender inside, served with our house tzatziki for dipping.",
+       "price": {
+        "min": 45,
+        "max": 45,
+        "label": "45"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-zucchini-herb-fritters.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-zucchini-herb-fritters.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-garlic-shrimp",
+       "name": "Garlic Shrimp",
+       "description": "Cooking cream, three-colour capsicum shrimp serve with toasted bread",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-garlic-shrimp.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-garlic-shrimp.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-chicken-tigani-with-yogurt-warm-sourdough",
+       "name": "Chicken Tiganiá with Yogurt & Warm Sourdough",
+       "description": "Skillet-seared chicken thighs (tiganiá), served with thick Greek yogurt and freshly grilled sourdough bread.",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-tigani-with-yogurt-warm-sourdough.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-tigani-with-yogurt-warm-sourdough.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-crispy-chicken-wings",
+       "name": "Crispy Chicken Wings",
+       "description": "Savor the crunch of our 4 pairs of golden-brown crispy chicken wings, delicately fried to perfection. Each piece offers a harmonious blend of flavorful juiciness and savory spices, creating a delightful taste explosion in every bite.",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-crispy-chicken-wings.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-crispy-chicken-wings.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-crispy-calamari",
+       "name": "Crispy Calamari",
+       "description": "Experience a symphony of flavors with our Crispy Calamari: tender rings, lightly battered and golden-fried to perfection. Served with a zesty lemon aioli and a hint of cracked pepper, it's a delightful textural contrast that will captivate your taste buds.",
+       "price": {
+        "min": 55,
+        "max": 55,
+        "label": "55"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-crispy-calamari.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-crispy-calamari.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-crispy-golden-panko-shrimp",
+       "name": "Crispy Golden Panko Shrimp",
+       "description": "",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-crispy-golden-panko-shrimp.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-crispy-golden-panko-shrimp.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "grill-sea-food",
+     "name": "Grill Sea Food",
+     "items": [
+      {
+       "id": "food-baked-parmesan-crusted-salmon-with-teriyaki-sauce",
+       "name": "Baked Parmesan Crusted Salmon with Teriyaki Sauce",
+       "description": "Savor our succulent baked salmon, encased in a crisp, golden Parmesan crust, drizzled with a rich teriyaki glaze. This exquisite blend of savory, nutty, and sweet flavors creates a delightful harmony that's simply irresistible.",
+       "price": {
+        "min": 110,
+        "max": 110,
+        "label": "110"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-baked-parmesan-crusted-salmon-with-teriyaki-sauce.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-baked-parmesan-crusted-salmon-with-teriyaki-sauce.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-grilled-salmon-creamy-pesto-parmesan-rissotto",
+       "name": "Grilled Salmon, Creamy Pesto & Parmesan Risotto",
+       "description": "Experience culinary delight with our Grilled Salmon Creamy Pesto - Parmesan Risotto. Savor flaky, tender salmon, brightened by crisp broccoli and velvety risotto, all elevated by a fresh, zesty lemon-dill sauce. A symphony of flavors awaits!",
+       "price": {
+        "min": 105,
+        "max": 105,
+        "label": "105"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-salmon-creamy-pesto-parmesan-rissotto.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-salmon-creamy-pesto-parmesan-rissotto.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-baked-norwegian-salmon-in-japanese-miso",
+       "name": "Baked Norwegian Salmon in Japanese Miso",
+       "description": "Savor the exquisite Baked Norwegian Salmon in Japanese Miso, where premium salmon fillet meets rich, umami miso glaze. Baked to tender perfection, this dish boasts a delicate sweetness and a melt-in-your-mouth texture, leaving a delightful taste of the sea.",
+       "price": {
+        "min": 105,
+        "max": 105,
+        "label": "105"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-baked-norwegian-salmon-in-japanese-miso.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-baked-norwegian-salmon-in-japanese-miso.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-grilled-salmon-with-creamy-mashed-parmesan-potatoes",
+       "name": "Grilled Salmon with Creamy Mashed Parmesan Potatoes",
+       "description": "Savor the exquisite flavors of perfectly grilled Norwegian Salmon, paired with velvety mashed potatoes enriched with Parmesan. A harmonious fusion of smokiness and creaminess, this dish is a luxurious indulgence for your palate.",
+       "price": {
+        "min": 99,
+        "max": 99,
+        "label": "99"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-salmon-with-creamy-mashed-parmesan-potatoes.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-salmon-with-creamy-mashed-parmesan-potatoes.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-tiger-prawns-gambi",
+       "name": "Tiger Prawns Gambi",
+       "description": "Succulent marinated tiger prawns, expertly grilled to perfection, infused with zesty citrus notes and a hint of aromatic garlic, crowned with crisp spring onions, delivering a harmonious blend of flavors and a delightful, tender bite.",
+       "price": {
+        "min": 99,
+        "max": 99,
+        "label": "99"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-tiger-prawns-gambi.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-tiger-prawns-gambi.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-tuna-steak",
+       "name": "Tuna Steak",
+       "description": "Marinate yellow fin Tuna, Fresh rocket leaves, Cherry Tomato, Roasted sesame seeds with Balsamic reduction",
+       "price": {
+        "min": 99,
+        "max": 99,
+        "label": "99"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-tuna-steak.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-tuna-steak.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-grilled-chilean-sea-bass",
+       "name": "Grilled Chilean Sea Bass",
+       "description": "Indulge in our exquisite Sea Bass, perfectly pan-seared to golden perfection, paired with a medley of char-grilled vegetables, kalamata olives, and sweet cherry tomatoes. Enhanced with a splash of fragrant garlic-infused olive oil and creamy butter, delivering a symphony of Mediterranean flavors.",
+       "price": {
+        "min": 110,
+        "max": 110,
+        "label": "110"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-chilean-sea-bass.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-chilean-sea-bass.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "meat-lovers",
+     "name": "Meat Lovers",
+     "items": [
+      {
+       "id": "food-greek-chicken-souvlaki",
+       "name": "Greek Chicken Souvlaki",
+       "description": "Marinated in a zesty blend of lemon, smoky paprika, and fragrant oregano-infused olive oil, our Greek Chicken Souvlaki is tender and flavorful. Served with peppery arugula and char-grilled tomato, offering a perfect balance of freshness and warmth.",
+       "price": {
+        "min": 69,
+        "max": 69,
+        "label": "69"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-greek-chicken-souvlaki.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-greek-chicken-souvlaki.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-chicken-gyros-tzatziki-hand-cut-fries",
+       "name": "Chicken Gyros, Tzatziki & Hand-Cut Fries",
+       "description": "Marinated chicken gyros on freshly made house pita with tzatziki, served with fresh-cut, double-fried potatoes and a crisp garden salad.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-gyros-tzatziki-hand-cut-fries.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-gyros-tzatziki-hand-cut-fries.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-grilled-teriyaki-sesame-chicken",
+       "name": "Grilled Teriyaki Sesame Chicken",
+       "description": "Savor our Grilled Teriyaki Chicken, featuring tender chicken marinated in a rich, savory teriyaki glaze, seared to perfection on the grill for a smoky caramelized finish. Enjoy sweet yet tangy flavors with a touch of ginger and garlic in every juicy bite.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-teriyaki-sesame-chicken.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-teriyaki-sesame-chicken.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-wagyu-ribeye-steak",
+       "name": "Wagyu Ribeye Steak",
+       "description": "Wagyu beef, asparagus, broccoli, carrots, serve with mushroom sauce",
+       "price": {
+        "min": 199,
+        "max": 199,
+        "label": "199"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-wagyu-ribeye-steak.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-wagyu-ribeye-steak.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-grilled-rib-eye-teriyaki-skewers",
+       "name": "Grilled Rib-Eye Teriyaki Skewers",
+       "description": "Succulent rib-eye strips marinated in a luscious teriyaki glaze, grilled to perfection and skewered for a delightful bite. Juicy, tender, and bursting with savory-sweet flavors, these skewers offer a melt-in-your-mouth experience that's simply unforgettable.",
+       "price": {
+        "min": 99,
+        "max": 99,
+        "label": "99"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-rib-eye-teriyaki-skewers.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-rib-eye-teriyaki-skewers.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-lamb-kebab",
+       "name": "Lamb Kebab",
+       "description": "Minced lamb meat marinated with herbs and paprika, grilled in charcoal Served with tomato sauce yogurt with parsley and frite potatoes. Of course Served with the tasty and famous Greek pita bread.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-lamb-kebab.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-lamb-kebab.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-lemon-chicken",
+       "name": "Lemon Chicken",
+       "description": "Chicken cream, kashkaval cheese, potato, zucchini, parmesan, olive oil",
+       "price": {
+        "min": 95,
+        "max": 95,
+        "label": "95"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-lemon-chicken.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-lemon-chicken.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-sun-kissed-chicken-bowl",
+       "name": "Sun-kissed Chicken Bowl",
+       "description": "Two grilled chicken skewers, Greek rice, Greek salad, feta cheese, roasted tomato, and tzatziki, served with pita bread. *Contains allergens: dairy & gluten",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-sun-kissed-chicken-bowl.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-sun-kissed-chicken-bowl.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-chicken-mushroom-roll",
+       "name": "Chicken Mushroom Roll",
+       "description": "Mashed Potato with mushroom sauce and grilled chicken",
+       "price": {
+        "min": 95,
+        "max": 95,
+        "label": "95"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-mushroom-roll.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-mushroom-roll.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-orzo-kofta-bowl",
+       "name": "Orzo Kofta Bowl",
+       "description": "Orzo pasta, tomato sauce with kofta bowl and mixed salad feta cheese garnish",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-orzo-kofta-bowl.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-orzo-kofta-bowl.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-greek-moussaka",
+       "name": "Greek Moussaka",
+       "description": "",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-greek-moussaka.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-greek-moussaka.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "pasta",
+     "name": "Pasta",
+     "items": [
+      {
+       "id": "food-grilled-chicken-penne-arrabiata",
+       "name": "Grilled Chicken Penne Arrabiata",
+       "description": "Spice up your palate with our Chicken Penne Arrabiata, featuring tender chicken in a fiery Arrabiata sauce, accompanied by briny Kalamata olives, vibrant spinach, and al dente pasta, all crowned with a sprinkle of Parmesan cheese for a savory finish.",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-chicken-penne-arrabiata.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-chicken-penne-arrabiata.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-orzo-pasta",
+       "name": "Orzo Pasta",
+       "description": "Greek Style Shaped pasta, bell pepper, cherry tomato, Neapolitan tomato sauce, served with crushed feta cheese",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-orzo-pasta.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-orzo-pasta.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-mushroom-risotto",
+       "name": "Mushroom Risotto",
+       "description": "Risotto rice, chopped onions, celery, and mushrooms topping with parmigiana cheese",
+       "price": {
+        "min": 65,
+        "max": 65,
+        "label": "65"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-mushroom-risotto.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-mushroom-risotto.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-aglio-olio-pasta-with-shrimp",
+       "name": "Aglio Olio Pasta with Shrimp",
+       "description": "Savor the perfect harmony of succulent shrimp mingled with sautéed garlic and red pepper flakes, tossed in al dente spaghetti. Infused with a hint of virgin olive oil and a sprinkle of parsley, this piquant Aglio Olio dish is a timeless Italian classic.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-aglio-olio-pasta-with-shrimp.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-aglio-olio-pasta-with-shrimp.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-linguini-pasta-with-shrimps",
+       "name": "Linguini Pasta with Shrimps",
+       "description": "Savor succulent Shrimps delicately tossed in a rich, velvety tomato sauce, crowned with freshly grated Parmigiana cheese, and perfectly al dente linguini. A delightful symphony of flavors and textures awaits your palate!",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-linguini-pasta-with-shrimps.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-linguini-pasta-with-shrimps.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-creamy-grilled-norwegian-salmon",
+       "name": "Creamy Grilled Norwegian Salmon",
+       "description": "Grilled to perfection, our succulent Norwegian salmon is elegantly nestled atop a bed of delicate pasta, enriched with luxurious cream and aged Parmesan. Crowned with exquisite salmon caviar, each bite offers a symphony of oceanic flavors.",
+       "price": {
+        "min": 79,
+        "max": 79,
+        "label": "79"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-creamy-grilled-norwegian-salmon.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-creamy-grilled-norwegian-salmon.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-spaghetti-bolognese",
+       "name": "Spaghetti Bolognese",
+       "description": "Spaghetti, minced beef, tomato sauce, parmesan topped with basil leaves.",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-spaghetti-bolognese.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-spaghetti-bolognese.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-grilled-chicken-taglia-alfredo",
+       "name": "Grilled Chicken Taglia Alfredo",
+       "description": "Savor our Grilled Chicken Taglia Alfredo: tender marinated chicken and earthy mushrooms atop silky tagliatelle, all swathed in a rich, creamy Alfredo sauce. Finished with a generous sprinkle of nutty Parmesan cheese for a delightful taste experience.",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-grilled-chicken-taglia-alfredo.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-grilled-chicken-taglia-alfredo.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-chicken-penny-pesto",
+       "name": "Chicken Penne Pesto",
+       "description": "Pesto sauce, chicken and penne pasta",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chicken-penny-pesto.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chicken-penny-pesto.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-spaghetti-pomodoro-with-grilled-herbed-chicken",
+       "name": "Spaghetti Pomodoro with Grilled Herbed Chicken",
+       "description": "Savor our Spaghetti Pomodoro, a vibrant blend of al dente pasta and zesty tomato sauce, topped with tender grilled chicken seasoned with aromatic herbs. Each bite offers a symphony of fresh flavors and satisfying textures.",
+       "price": {
+        "min": 75,
+        "max": 75,
+        "label": "75"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-spaghetti-pomodoro-with-grilled-herbed-chicken.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-spaghetti-pomodoro-with-grilled-herbed-chicken.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "sides",
+     "name": "Sides",
+     "items": [
+      {
+       "id": "food-truffle-fries",
+       "name": "Truffle Fries",
+       "description": "Truffle Paste, Parmesan",
+       "price": {
+        "min": 30,
+        "max": 30,
+        "label": "30"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-truffle-fries.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-truffle-fries.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-plain-fries",
+       "name": "Plain Fries",
+       "description": "Garlic aioli, Sea Salt",
+       "price": {
+        "min": 25,
+        "max": 25,
+        "label": "25"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-plain-fries.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-plain-fries.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "veggies",
+     "name": "Veggies",
+     "items": [
+      {
+       "id": "food-mixed-vegetables-souflaki",
+       "name": "Mixed Vegetable Souvlaki",
+       "description": "",
+       "price": {
+        "min": 50,
+        "max": 50,
+        "label": "50"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-mixed-vegetables-souflaki.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-mixed-vegetables-souflaki.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "desserts",
+     "name": "Desserts",
+     "items": [
+      {
+       "id": "food-chocolate-fondue",
+       "name": "Chocolate Fondue",
+       "description": "Chocolate fondue topped with icing sugar served with vanilla ice cream and crushed biscuit.",
+       "price": {
+        "min": 50,
+        "max": 50,
+        "label": "50"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-chocolate-fondue.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-chocolate-fondue.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-special-honey-cake",
+       "name": "Special Honey Cake",
+       "description": "Indulge in our Honey Cake, featuring lush layers of golden sponge infused with rich, fragrant honey. Each bite melts with a symphony of sweet nectar and a hint of warm spices, delivering a sublime dessert experience.",
+       "price": {
+        "min": 50,
+        "max": 50,
+        "label": "50"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-special-honey-cake.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-special-honey-cake.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "food-special-cheese-cake",
+       "name": "Special Cheese Cake",
+       "description": "Indulge in our luscious Special Cheese Cake, featuring a velvety, creamy texture paired with the vibrant, tangy zest of freshly whipped cream. Crowned with a delectable medley of juicy mixed berries, it's a symphony of flavors in every bite!",
+       "price": {
+        "min": 50,
+        "max": 50,
+        "label": "50"
+       },
+       "images": {
+        "top": {
+         "src": "media/food-top-special-cheese-cake.webp",
+         "cutout": true
+        },
+        "side": {
+         "src": "media/food-side-special-cheese-cake.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bar",
+   "title": "Bar Menu",
+   "subtitle": "Coffee · Tea · Juices · Mocktails",
+   "categories": [
+    {
+     "id": "coffee-hot",
+     "name": "Coffee (Hot)",
+     "items": [
+      {
+       "id": "bar-espresso",
+       "name": "Espresso",
+       "description": "",
+       "price": {
+        "min": 20.0,
+        "max": 25.0,
+        "label": "20–25"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-espresso.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-americano",
+       "name": "Americano",
+       "description": "",
+       "price": {
+        "min": 26.0,
+        "max": 26.0,
+        "label": "26"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-americano.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-spanish-latte",
+       "name": "Spanish Latte",
+       "description": "",
+       "price": {
+        "min": 35.0,
+        "max": 35.0,
+        "label": "35"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-spanish-latte.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-caf-latte",
+       "name": "Café Latte",
+       "description": "",
+       "price": {
+        "min": 28.0,
+        "max": 28.0,
+        "label": "28"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-caf-latte.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-flat-white",
+       "name": "Flat White",
+       "description": "",
+       "price": {
+        "min": 30.0,
+        "max": 30.0,
+        "label": "30"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-flat-white.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-cappuccino",
+       "name": "Cappuccino",
+       "description": "",
+       "price": {
+        "min": 28.0,
+        "max": 28.0,
+        "label": "28"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-cappuccino.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-hot-cocoa",
+       "name": "Hot Cocoa",
+       "description": "",
+       "price": {
+        "min": 35.0,
+        "max": 35.0,
+        "label": "35"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-hot-cocoa.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-matcha-latte",
+       "name": "Matcha Latte",
+       "description": "",
+       "price": {
+        "min": 40.0,
+        "max": 40.0,
+        "label": "40"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-matcha-latte.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-espresso-macchiato",
+       "name": "Espresso Macchiato",
+       "description": "",
+       "price": {
+        "min": 30.0,
+        "max": 30.0,
+        "label": "30"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-espresso-macchiato.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-affogato",
+       "name": "Affogato",
+       "description": "",
+       "price": {
+        "min": 30.0,
+        "max": 30.0,
+        "label": "30"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-affogato.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-turkish-greek-coffee",
+       "name": "Turkish/Greek Coffee",
+       "description": "",
+       "price": {
+        "min": 25.0,
+        "max": 25.0,
+        "label": "25"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-turkish-greek-coffee.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-arabic-coffee",
+       "name": "Arabic Coffee",
+       "description": "",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-arabic-coffee.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "coffee-iced",
+     "name": "Coffee (Iced)",
+     "items": [
+      {
+       "id": "bar-iced-americano",
+       "name": "Iced Americano",
+       "description": "",
+       "price": {
+        "min": 30.0,
+        "max": 30.0,
+        "label": "30"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-iced-americano.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-iced-mocha",
+       "name": "Iced Mocha",
+       "description": "",
+       "price": {
+        "min": 40.0,
+        "max": 40.0,
+        "label": "40"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-iced-mocha.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-coffee-with-orange",
+       "name": "Coffee with Orange",
+       "description": "",
+       "price": {
+        "min": 40.0,
+        "max": 40.0,
+        "label": "40"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-coffee-with-orange.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-raspberry-matcha",
+       "name": "Raspberry Matcha",
+       "description": "",
+       "price": {
+        "min": 40.0,
+        "max": 40.0,
+        "label": "40"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-raspberry-matcha.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-iced-latte",
+       "name": "Iced Latte",
+       "description": "",
+       "price": {
+        "min": 32.0,
+        "max": 32.0,
+        "label": "32"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-iced-latte.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-iced-cappuccino",
+       "name": "Iced Cappuccino",
+       "description": "",
+       "price": {
+        "min": 32.0,
+        "max": 32.0,
+        "label": "32"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-iced-cappuccino.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-frape-with-ice-cream",
+       "name": "Frappé with Ice Cream",
+       "description": "Blended espresso, milk, vanilla ice – cream",
+       "price": {
+        "min": 45.0,
+        "max": 45.0,
+        "label": "45"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-frape-with-ice-cream.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-iced-chocolate",
+       "name": "Iced Chocolate",
+       "description": "",
+       "price": {
+        "min": 35.0,
+        "max": 35.0,
+        "label": "35"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-iced-chocolate.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "specialty-organic-tea",
+     "name": "Specialty Organic Tea",
+     "items": [
+      {
+       "id": "bar-hot-lemon-with-ginger-honey",
+       "name": "Hot Lemon with Ginger & Honey",
+       "description": "Freshly squeezed lemon, ginger and honey",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-hot-lemon-with-ginger-honey.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-green-tea",
+       "name": "Green Tea",
+       "description": "flavored green tea with nana mint.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-green-tea.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-milk-oolong-with-banana-cinnamon",
+       "name": "Milk Oolong with Banana & Cinnamon",
+       "description": "Tea leaves, fire flower, fresh banana & cinnamon sticks.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-milk-oolong-with-banana-cinnamon.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-chamomille-with-mandarin",
+       "name": "Chamomile with Mandarin",
+       "description": "pure chamomile flowers with fresh mandarin.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-chamomille-with-mandarin.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-masala-chai",
+       "name": "Masala Chai",
+       "description": "spicy black tea with hint of sweet condensed milk.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-masala-chai.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-berry-queen",
+       "name": "Berry Queen",
+       "description": "Hibiscus based sweet berries mixed flavoured fruit melanges.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-berry-queen.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-english-breakfast-tea-1",
+       "name": "English Breakfast Tea",
+       "description": "Black tea",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-english-breakfast-tea-1.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-english-breakfast-tea-2",
+       "name": "English Breakfast Tea",
+       "description": "Black Tea",
+       "price": {
+        "min": 18.0,
+        "max": 18.0,
+        "label": "18"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-english-breakfast-tea-2.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-moroccan-tea",
+       "name": "Moroccan Tea",
+       "description": "",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-moroccan-tea.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "mocktails",
+     "name": "Mocktails",
+     "items": [
+      {
+       "id": "bar-passion-fruit",
+       "name": "Passion Fruit",
+       "description": "Luscious and refreshing mocktail with a pleasant tropical aroma.",
+       "price": {
+        "min": 45.0,
+        "max": 65.0,
+        "label": "45–65"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-passion-fruit.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-fruit-punch",
+       "name": "Fruit Punch",
+       "description": "Mixed fresh cut fruits, lychee syrup, soda",
+       "price": {
+        "min": 45.0,
+        "max": 65.0,
+        "label": "45–65"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-fruit-punch.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-jamaican-mocktail",
+       "name": "Jamaican Mocktail",
+       "description": "",
+       "price": {
+        "min": 38.0,
+        "max": 38.0,
+        "label": "38"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-jamaican-mocktail.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-breeze",
+       "name": "Breeze",
+       "description": "",
+       "price": {
+        "min": 38.0,
+        "max": 38.0,
+        "label": "38"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-breeze.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "tono-s-signature",
+     "name": "Tono's Signature",
+     "items": [
+      {
+       "id": "bar-blue-lagoon",
+       "name": "Blue Lagoon",
+       "description": "Refreshing french cocktail, perfect summer drink",
+       "price": {
+        "min": 45.0,
+        "max": 45.0,
+        "label": "45"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-blue-lagoon.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-rooibos-iced-tea",
+       "name": "Rooibos Iced Tea",
+       "description": "",
+       "price": {
+        "min": 35.0,
+        "max": 35.0,
+        "label": "35"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-rooibos-iced-tea.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-iced-matcha",
+       "name": "Iced Matcha",
+       "description": "Matcha, agave, oat milk",
+       "price": {
+        "min": 45.0,
+        "max": 45.0,
+        "label": "45"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-iced-matcha.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-hibiscus-iced-tea",
+       "name": "Hibiscus Iced Tea",
+       "description": "Brewed hibiscus flowers with twist of sweet & citrusy taste.",
+       "price": {
+        "min": 35.0,
+        "max": 35.0,
+        "label": "35"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-hibiscus-iced-tea.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "freshly-squeezed-juices",
+     "name": "Freshly Squeezed Juices",
+     "items": [
+      {
+       "id": "bar-orange",
+       "name": "Orange",
+       "description": "",
+       "price": {
+        "min": 48.0,
+        "max": 48.0,
+        "label": "48"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-orange.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-green-apple",
+       "name": "Green Apple",
+       "description": "",
+       "price": {
+        "min": 48.0,
+        "max": 48.0,
+        "label": "48"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-green-apple.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-carrot",
+       "name": "Carrot",
+       "description": "",
+       "price": {
+        "min": 38.0,
+        "max": 38.0,
+        "label": "38"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-carrot.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-lemon-mint",
+       "name": "Lemon & Mint",
+       "description": "",
+       "price": {
+        "min": 38.0,
+        "max": 38.0,
+        "label": "38"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-lemon-mint.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-booster",
+       "name": "Booster",
+       "description": "Carrot juice, Beetroot juice, Apple juice, Ginger juice",
+       "price": {
+        "min": 38.0,
+        "max": 38.0,
+        "label": "38"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-booster.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "soft-drinks",
+     "name": "Soft Drinks",
+     "items": [
+      {
+       "id": "bar-coca-cola",
+       "name": "Coca Cola",
+       "description": "Original",
+       "price": {
+        "min": 18.0,
+        "max": 18.0,
+        "label": "18"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-coca-cola.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-coca-cola-zero",
+       "name": "Coca Cola Zero",
+       "description": "",
+       "price": {
+        "min": 18.0,
+        "max": 18.0,
+        "label": "18"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-coca-cola-zero.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-sprite",
+       "name": "Sprite",
+       "description": "",
+       "price": {
+        "min": 18.0,
+        "max": 18.0,
+        "label": "18"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-sprite.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-fanta",
+       "name": "Fanta",
+       "description": "",
+       "price": {
+        "min": 18.0,
+        "max": 18.0,
+        "label": "18"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-fanta.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-red-bull",
+       "name": "Red Bull",
+       "description": "",
+       "price": {
+        "min": 35.0,
+        "max": 35.0,
+        "label": "35"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-red-bull.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "water",
+     "name": "Water",
+     "items": [
+      {
+       "id": "bar-aqua-carpatica-still-natural-mineral-water-330ml",
+       "name": "AQUA - Carpatica - Still Natural Mineral Water - 330ml",
+       "description": "",
+       "price": {
+        "min": 17.0,
+        "max": 17.0,
+        "label": "17"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-aqua-carpatica-still-natural-mineral-water-330ml.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-aqua-carpatica-still-mineral-drinking-water-750ml",
+       "name": "AQUA - Carpatica - Still Mineral Drinking Water - 750ml",
+       "description": "",
+       "price": {
+        "min": 27.0,
+        "max": 27.0,
+        "label": "27"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-aqua-carpatica-still-mineral-drinking-water-750ml.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-aqua-carpatica-sparkling-natural-drinking-water-330ml",
+       "name": "AQUA - Carpatica - Sparkling Natural Drinking Water - 330ml",
+       "description": "",
+       "price": {
+        "min": 17.0,
+        "max": 17.0,
+        "label": "17"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-aqua-carpatica-sparkling-natural-drinking-water-330ml.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "bar-aqua-carpatica-sparkling-mineral-drinking-water-750ml",
+       "name": "AQUA - Carpatica - Sparkling Mineral Drinking Water - 750ml",
+       "description": "",
+       "price": {
+        "min": 27.0,
+        "max": 27.0,
+        "label": "27"
+       },
+       "images": {
+        "main": {
+         "src": "media/bar-iso-aqua-carpatica-sparkling-mineral-drinking-water-750ml.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shisha",
+   "title": "Shisha Menu",
+   "subtitle": "Arabic · Turkish · Russian · Signature",
+   "categories": [
+    {
+     "id": "arabic-shisha",
+     "name": "Arabic shisha",
+     "items": [
+      {
+       "id": "shisha-lemon-mint",
+       "name": "Lemon Mint",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-lemon-mint.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": true
+      },
+      {
+       "id": "shisha-gum",
+       "name": "Gum",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-gum.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-blueberry",
+       "name": "Blueberry",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-blueberry.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-grape",
+       "name": "Grape",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-grape.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-mint",
+       "name": "Mint",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-mint.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-orange",
+       "name": "Orange",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-orange.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": true
+      },
+      {
+       "id": "shisha-gum-cinnamon",
+       "name": "Gum Cinnamon",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-gum-cinnamon.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-two-apples",
+       "name": "Two Apples",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-two-apples.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-two-apples-nakhla",
+       "name": "Two Apples (Nakhla)",
+       "description": "Traditional Arabic tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 55.0,
+        "max": 55.0,
+        "label": "55"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-two-apples-nakhla.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "turkish-shisha",
+     "name": "Turkish shisha",
+     "items": [
+      {
+       "id": "shisha-istanbul-night",
+       "name": "Istanbul Night",
+       "description": "Traditional Turkish tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 75.0,
+        "max": 75.0,
+        "label": "75"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-istanbul-night.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-lady-killer",
+       "name": "Lady Killer",
+       "description": "Traditional Turkish tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 75.0,
+        "max": 75.0,
+        "label": "75"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-lady-killer.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-marbella",
+       "name": "Marbella",
+       "description": "Traditional Turkish tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 75.0,
+        "max": 75.0,
+        "label": "75"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-marbella.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-love-66",
+       "name": "Love 66",
+       "description": "Traditional Turkish tobaccos. Has natural flavors. The strength is light.",
+       "price": {
+        "min": 75.0,
+        "max": 75.0,
+        "label": "75"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-love-66.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "russian-shisha",
+     "name": "Russian shisha",
+     "items": [
+      {
+       "id": "shisha-light",
+       "name": "Russian · Light",
+       "description": "Prepared with premium Russian brands like Starline.",
+       "price": {
+        "min": 95.0,
+        "max": 95.0,
+        "label": "95"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-light.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-medium",
+       "name": "Russian · Medium",
+       "description": "Prepared with premium Russian brands like Darkside, Must Have, and Blackburn.",
+       "price": {
+        "min": 95.0,
+        "max": 95.0,
+        "label": "95"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-medium.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-strong",
+       "name": "Russian · Strong",
+       "description": "Prepared with premium Russian brands like Tangiers, Bonche, Satyr.",
+       "price": {
+        "min": 95.0,
+        "max": 95.0,
+        "label": "95"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-strong.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "signature-shisha",
+     "name": "Signature Shisha",
+     "items": [
+      {
+       "id": "shisha-mykonos-breeze-light",
+       "name": "Mykonos Breeze (light)",
+       "description": "A naturally sweet tropical blend with a juicy base, lifted by a light tangy sharpness for a fresh and smooth experience.",
+       "price": {
+        "min": 110.0,
+        "max": 110.0,
+        "label": "110"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-mykonos-breeze-light.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-athena-s-kiss-light",
+       "name": "Athena's Kiss (light)",
+       "description": "The sweet and tangy balance of raspberry and strawberry blends with a subtle pastry note, creating a smooth and enjoyable dessert-inspired experience.",
+       "price": {
+        "min": 110.0,
+        "max": 110.0,
+        "label": "110"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-athena-s-kiss-light.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-olympus-mist-strong",
+       "name": "Olympus Mist (strong)",
+       "description": "Refreshing, bold and intense flavor with a perfect balance of sweet and tangy notes. Smooth yet powerful taste that leaves a long-lasting impression.",
+       "price": {
+        "min": 110.0,
+        "max": 110.0,
+        "label": "110"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-olympus-mist-strong.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-santorini-sunset-medium",
+       "name": "Santorini Sunset (medium)",
+       "description": "A tropical escape. A rich blend of creamy, sweet, and refreshing notes that delivers a balanced, full-flavored beach vibe.",
+       "price": {
+        "min": 110.0,
+        "max": 110.0,
+        "label": "110"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-santorini-sunset-medium.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-aegean-dream-medium",
+       "name": "Aegean Dream (medium)",
+       "description": "Perfect for those with a sweet tooth. Rich and full-bodied, delivering a bold, dessert-inspired experience with a well-balanced intensity.",
+       "price": {
+        "min": 110.0,
+        "max": 110.0,
+        "label": "110"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-aegean-dream-medium.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-blue-lagoon-medium",
+       "name": "Blue Lagoon (medium)",
+       "description": "A bold cola-based blend with a smooth, slightly smoky warmth, delivering a rich and refreshing experience.",
+       "price": {
+        "min": 110.0,
+        "max": 110.0,
+        "label": "110"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-blue-lagoon-medium.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "extra",
+     "name": "Extra",
+     "items": [
+      {
+       "id": "shisha-colosseum",
+       "name": "Colosseum",
+       "description": "Elevate your session with our nicotine strength boosters (strong tobacco). Opt for a Level 1 booster for an additional 30 AED.",
+       "price": {
+        "min": 150.0,
+        "max": 150.0,
+        "label": "150"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-colosseum.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-shisha-anima-smart",
+       "name": "Shisha \"Anima Smart\"",
+       "description": "The unique shisha handmade in Czech republic.",
+       "price": {
+        "min": 65.0,
+        "max": 65.0,
+        "label": "65"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-shisha-anima-smart.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-shisha-maxx-royal-emerald-gold",
+       "name": "Shisha \"Maxx Royal Emerald Gold\"",
+       "description": "The Maxx Royal Hookah features a new 360 degree swirling airflow system. Made of titanium coated stainless steel with Emerald Gold finish.",
+       "price": {
+        "min": 45.0,
+        "max": 45.0,
+        "label": "45"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-shisha-maxx-royal-emerald-gold.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    },
+    {
+     "id": "change-bowl",
+     "name": "Change Bowl",
+     "items": [
+      {
+       "id": "shisha-change-bowl-arabic",
+       "name": "Change Bowl Arabic",
+       "description": "You can change the head on your shisha at a special price.",
+       "price": {
+        "min": 30.0,
+        "max": 30.0,
+        "label": "30"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-change-bowl-arabic.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-change-bowl-turkish",
+       "name": "Change Bowl Turkish",
+       "description": "",
+       "price": {
+        "min": 40.0,
+        "max": 40.0,
+        "label": "40"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-change-bowl-turkish.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      },
+      {
+       "id": "shisha-change-bowl-russian",
+       "name": "Change Bowl Russian",
+       "description": "",
+       "price": {
+        "min": 50.0,
+        "max": 50.0,
+        "label": "50"
+       },
+       "images": {
+        "main": {
+         "src": "media/shisha-side-change-bowl-russian.webp",
+         "cutout": true
+        }
+       },
+       "mostLiked": false
+      }
+     ]
+    }
+   ],
+   "note": "Change bowl at half the price of the order",
+   "tips": [
+    {
+     "title": "No more than two people",
+     "text": "We recommend smoking one hookah for no more than two people. This is due to temperature regimes as well as individual taste preferences and the intensity of smoking."
+    },
+    {
+     "title": "Flavor for your individual request",
+     "text": "We can offer you both ready-made combinations and select a flavor for your individual request (for example, fruity, berry, citrus, tropical, dessert, nutty, lemonade, alcoholic, coffee, floral, herbal, tea)."
+    },
+    {
+     "title": "Ask the shisha master",
+     "text": "We have a wide assortment of hookahs, hookah bowls, as well as brands and flavors of hookah tobacco. You can ask the shisha master to tell you about the assortment and the differences in smoking."
+    },
+    {
+     "title": "Strength levels",
+     "text": "We can make your hookah of varying strength levels. If you don't know what strength level you need, the hookah master will help you decide."
+    }
+   ]
+  }
+ ],
+ "logo": {
+  "white": "media/logo-white.webp",
+  "color": "media/logo-color.webp",
+  "emblem_white": "media/logo-emblem-white.webp",
+  "word_white": "media/logo-word-white.webp",
+  "emblem_color": "media/logo-emblem-color.webp",
+  "word_color": "media/logo-word-color.webp"
+ },
+ "ui": {
+  "glass": {
+   "btn-start": "media/glass-btn-start.webp",
+   "card-bar": "media/glass-card-bar.webp",
+   "card-clear": "media/glass-card-clear.webp",
+   "card-crystal": "media/glass-card-crystal.webp",
+   "card-food": "media/glass-card-food.webp",
+   "card-shisha": "media/glass-card-shisha.webp",
+   "pill-clear": "media/glass-pill-clear.webp",
+   "plus-round": "media/glass-plus-round.webp",
+   "price-pill": "media/glass-price-pill.webp",
+   "real-card": "media/glass-real-card.webp",
+   "real-cut": "media/glass-real-cut.webp"
+  },
+  "deco": {
+   "amphora": "media/deco-amphora.webp",
+   "basil-sprig": "media/deco-basil-sprig.webp",
+   "feta-plate": "media/deco-feta-plate.webp",
+   "fig-halves": "media/deco-fig-halves.webp",
+   "grapes-vine": "media/deco-grapes-vine.webp",
+   "greek-bowl-olives": "media/deco-greek-bowl-olives.webp",
+   "greek-bowl-salt": "media/deco-greek-bowl-salt.webp",
+   "greek-tile": "media/deco-greek-tile.webp",
+   "herb-scatter": "media/deco-herb-scatter.webp",
+   "lemon-olives": "media/deco-lemon-olives.webp",
+   "lemons-leaves": "media/deco-lemons-leaves.webp",
+   "mint-leaves": "media/deco-mint-leaves.webp",
+   "oil-bowl": "media/deco-oil-bowl.webp",
+   "olive-branch": "media/deco-olive-branch.webp",
+   "oregano-bunch": "media/deco-oregano-bunch.webp",
+   "pomegranate": "media/deco-pomegranate.webp",
+   "rosemary-sprig": "media/deco-rosemary-sprig.webp",
+   "thyme-sprig": "media/deco-thyme-sprig.webp",
+   "tomato-vine": "media/deco-tomato-vine.webp"
+  },
+  "bg": {
+   "santorini-tall": "media/bg-santorini-tall.webp",
+   "santorini": "media/bg-santorini.webp"
+  },
+  "dims": {
+   "btn-start": [
+    1452,
+    440
+   ],
+   "card-bar": [
+    1473,
+    878
+   ],
+   "card-clear": [
+    1482,
+    893
+   ],
+   "card-crystal": [
+    1468,
+    783
+   ],
+   "card-food": [
+    1470,
+    916
+   ],
+   "card-shisha": [
+    1469,
+    897
+   ],
+   "pill-clear": [
+    1500,
+    427
+   ],
+   "plus-round": [
+    1112,
+    1134
+   ],
+   "price-pill": [
+    1472,
+    317
+   ],
+   "real-card": [
+    1388,
+    888
+   ],
+   "real-cut": [
+    1393,
+    893
+   ],
+   "amphora": [
+    1000,
+    667
+   ],
+   "basil-sprig": [
+    1000,
+    1000
+   ],
+   "feta-plate": [
+    1000,
+    1000
+   ],
+   "fig-halves": [
+    1000,
+    1000
+   ],
+   "grapes-vine": [
+    1000,
+    667
+   ],
+   "greek-bowl-olives": [
+    1000,
+    1000
+   ],
+   "greek-bowl-salt": [
+    1000,
+    1000
+   ],
+   "greek-tile": [
+    1000,
+    1000
+   ],
+   "herb-scatter": [
+    1000,
+    667
+   ],
+   "lemon-olives": [
+    1000,
+    1000
+   ],
+   "lemons-leaves": [
+    1000,
+    667
+   ],
+   "mint-leaves": [
+    1000,
+    1000
+   ],
+   "oil-bowl": [
+    1000,
+    1000
+   ],
+   "olive-branch": [
+    1000,
+    667
+   ],
+   "oregano-bunch": [
+    1000,
+    667
+   ],
+   "pomegranate": [
+    1000,
+    1000
+   ],
+   "rosemary-sprig": [
+    1000,
+    667
+   ],
+   "thyme-sprig": [
+    1000,
+    667
+   ],
+   "tomato-vine": [
+    1000,
+    667
+   ],
+   "santorini-tall": [
+    1024,
+    1536
+   ],
+   "santorini": [
+    1672,
+    941
+   ]
+  }
+ }
+}

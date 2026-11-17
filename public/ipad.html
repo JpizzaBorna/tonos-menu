@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tonos Menu – iPad preview</title>
+<style>
+  /* iPad Pro 10.5" portrait: 834 x 1112 CSS px. The frame is scaled to fit the window, never resized. */
+  html, body { margin: 0; height: 100%; background: #111418; overflow: hidden; }
+  body { display: grid; place-items: center; font-family: -apple-system, system-ui, sans-serif; }
+  .device {
+    position: absolute; left: 50%; top: calc(50% - 12px); width: 834px; height: 1112px;
+    padding: 34px; border-radius: 56px; background: #1c1f24;
+    box-shadow: 0 0 0 2px #3a3f47, 0 30px 80px rgba(0,0,0,.6);
+    transform-origin: center center;
+    box-sizing: content-box;
+  }
+  iframe { width: 834px; height: 1112px; border: 0; border-radius: 22px; display: block; background: #000; }
+  .label { position: fixed; bottom: 10px; left: 0; right: 0; text-align: center; color: #6b7380; font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="device" id="device"><iframe src="./" title="Tonos menu on iPad"></iframe></div>
+  <div class="label">iPad Pro 10.5″ · portrait · 834 × 1112</div>
+<script>
+  // scale the whole iPad to fit the window; the menu inside always gets exactly 834 x 1112
+  const d = document.getElementById('device')
+  function fit() {
+    const w = 834 + 68, h = 1112 + 68 + 30
+    const s = Math.min(innerWidth / w, innerHeight / h, 1)
+    d.style.transform = 'translate(-50%, -50%) scale(' + s + ')'
+  }
+  addEventListener('resize', fit); fit()
+</script>
+</body>
+</html>
