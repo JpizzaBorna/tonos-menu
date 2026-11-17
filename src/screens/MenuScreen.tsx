@@ -356,6 +356,18 @@ function FoodTile({ item, index, onOpen }: { item: Item; index: number; onOpen: 
         onClick={() => onOpen(item)}
         whileTap={{ scale: 0.96 }}
       >
+        {/* water ripple: two soft rings spread out from the plate each time the dish comes into view */}
+        {[0, 0.45].map((delay) => (
+          <motion.span
+            key={delay}
+            className="plate__ripple"
+            aria-hidden
+            initial={{ scale: 0.7, opacity: 0 }}
+            whileInView={{ scale: [0.7, 1.14], opacity: [0, 0.55, 0] }}
+            viewport={{ amount: 0.35 }}
+            transition={{ duration: 1.7, ease: 'easeOut', delay: 0.15 + delay }}
+          />
+        ))}
         {img && <img className={img.cutout ? 'plate__cut' : 'plate__photo'} src={asset(img.src)} alt="" loading="lazy" decoding="async" />}
       </motion.button>
       <div className="dish__text">
