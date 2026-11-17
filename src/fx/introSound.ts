@@ -17,9 +17,17 @@ function ac(): AudioContext | null {
 
 /** Call from a user tap. Unlocks audio for the rest of the session and preloads the optional mp3. */
 export function unlockAudio() {
+  // iPad: treat the menu's sound as media playback, so it plays even when the iPad is in Silent mode
+  // (by default Safari's web audio follows the ring/silent switch and stays mute).
+  try {
+    const s = (navigator as unknown as { audioSession?: { type: string } }).audioSession
+    if (s) s.type = 'playback'
+  } catch {
+    /* older iPadOS: nothing to set */
+  }
   const c = ac()
   if (!c) return
-  if (c.state === 'suspended') void c.resume()
+  if (c.state !== 'running') void c.resume()
   // a silent tick: iOS unlocks only once a sound has started inside a gesture
   const o = c.createOscillator()
   const g = c.createGain()
@@ -37,11 +45,21 @@ export function unlockAudio() {
   }
 }
 
-export const audioUnlocked = () => !!ctx && ctx.state === 'running'
+/** True once a tap has created the audio engine (on iPad it may still be waking up — playIntroMusic waits for it). */
+export const audioUnlocked = () => !!ctx
 
-export function playIntroMusic(volume = 0.6) {
-  const c = ac()
-  if (!c || c.state !== 'running') return
+export async function playIntroMusic(volume = 0.6) {
+  const c = ctx
+  if (!c) return
+  // iPad: the engine starts "suspended"/"interrupted" and only becomes "running" a moment after the tap — wait for it
+  if (c.state !== 'running') {
+    try {
+      await Promise.race([c.resume(), new Promise((r) => setTimeout(r, 1500))])
+    } catch {
+      /* ignore */
+    }
+  }
+  if (c.state !== 'running') return
   try {
     if (fileBuf) {
       const s = c.createBufferSource()

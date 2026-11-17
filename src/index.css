@@ -452,8 +452,12 @@ h1, h2, h3, p { margin: 0; }
   .surface { animation: surface linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
   @keyframes surface {
     0%   { opacity: 0; transform: translateY(46px) scale(.94); filter: blur(10px); }
-    24%  { opacity: 1; transform: none; filter: blur(0); }
-    84%  { opacity: 1; transform: none; filter: blur(0); }
+    /* "none" (not blur(0)) while the dish is on screen: Safari crops a child's drop-shadow to the edges of any
+       element that carries a filter, so the plate shadows were cut off left and right on the iPad. */
+    23%  { filter: blur(0.01px); }
+    24%  { opacity: 1; transform: none; filter: none; }
+    84%  { opacity: 1; transform: none; filter: none; }
+    85%  { filter: blur(0.01px); }
     100% { opacity: 0; transform: translateY(-26px) scale(.97); filter: blur(8px); }
   }
   .drift { animation: drift linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
