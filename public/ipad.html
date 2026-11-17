@@ -25,6 +25,8 @@
 <script>
   // scale the whole iPad to fit the window; the menu inside always gets exactly 834 x 1112
   const d = document.getElementById('device')
+  // ipad.html#food opens the framed menu straight on Food (also #bar, #shisha)
+  if (location.hash) d.querySelector('iframe').src = './' + location.hash
   function fit() {
     const w = 834 + 68, h = 1112 + 68 + 30
     const s = Math.min(innerWidth / w, innerHeight / h, 1)

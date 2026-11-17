@@ -17,7 +17,11 @@ type Screen = { name: 'welcome' } | { name: 'intro' } | { name: 'picker' } | { n
 
 function Tablet() {
   const { reset } = useOrder()
-  const [screen, setScreen] = useState<Screen>({ name: 'welcome' })
+  // tonos.website/#food (or #bar, #shisha) opens straight on that menu — handy for staff and screenshots
+  const [screen, setScreen] = useState<Screen>(() => {
+    const h = location.hash.slice(1)
+    return h === 'food' || h === 'bar' || h === 'shisha' ? { name: 'menu', id: h } : { name: 'welcome' }
+  })
   const [item, setItem] = useState<Item | null>(null)
   const [orderOpen, setOrderOpen] = useState(false)
   const [waiterOpen, setWaiterOpen] = useState(false)
