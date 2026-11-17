@@ -472,3 +472,112 @@ h1, h2, h3, p { margin: 0; }
 .offline-pill { position: fixed; z-index: 70; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom)); translate: -50% 0; display: flex; align-items: center; gap: var(--s-3); padding: 10px 18px; border-radius: var(--r-pill); font-size: var(--fs-sm); font-weight: 500; color: #fff; white-space: nowrap; pointer-events: none; }
 .offline-pill__bar { width: 70px; height: 4px; border-radius: 2px; background: rgba(255,255,255,.18); overflow: hidden; }
 .offline-pill__bar > span { display: block; height: 100%; background: var(--c-gold); transition: width .6s ease; }
+
+
+/* ───────────── Phone (iPhone and other narrow screens) ─────────────
+   Everything above is sized for the iPad. On a phone (portrait, up to 600px wide) the same screens are
+   scaled down: one column of dishes, two columns of drinks, a two-row header, full-width pop-ups. */
+@media (max-width: 600px) {
+  :root { --fs-hero: clamp(40px, 13vw, 64px); --tap: 42px; }
+
+  /* Welcome + intro */
+  .welcome__orb { width: 104px; height: 104px; }
+  .welcome__orb .emblem-badge { zoom: .62; }
+  .welcome__text { font-size: 13px; letter-spacing: .3em; }
+  .intro { padding: 0 var(--s-5); gap: var(--s-4); }
+  .intro__emblem { zoom: .62; }
+  .intro__word { zoom: .58; }
+  .intro__sub { font-size: var(--fs-md); }
+  .intro__start-wrap { margin-top: var(--s-4); }
+  .intro__hint { font-size: var(--fs-xs); letter-spacing: .16em; }
+  .gbtn--xl { min-height: 58px; padding: 0 var(--s-10); font-size: var(--fs-lg); letter-spacing: .28em; }
+  .gbtn--lg { min-height: 50px; padding: 0 var(--s-6); font-size: 17px; }
+
+  /* Picker: three cards stacked, picture on the left */
+  .picker { padding: calc(var(--s-6) + env(safe-area-inset-top)) var(--s-4) calc(var(--s-4) + env(safe-area-inset-bottom)); gap: var(--s-4); }
+  .picker__logo { zoom: .75; }
+  .picker__head p { font-size: var(--fs-xs); letter-spacing: .22em; }
+  .picker__cards { grid-template-columns: 1fr; gap: var(--s-3); }
+  .pick--skinned { border-radius: 28px; }
+  .face { grid-template-rows: auto; grid-template-columns: 104px 1fr; align-items: center; gap: var(--s-4); padding: var(--s-4) var(--s-5); }
+  .face__img { max-width: 100px; max-height: 100px; }
+  .face__img--photo { width: 96px; }
+  .face__body { justify-items: start; text-align: left; padding-top: 0; gap: var(--s-1); }
+  .face__title { font-size: 30px; letter-spacing: .14em; }
+  .face__sub { font-size: var(--fs-sm); }
+  .face__go { margin-top: var(--s-2); min-height: 38px; padding: 0 var(--s-4); font-size: var(--fs-sm); }
+  .picker__foot { font-size: var(--fs-xs); }
+
+  /* Menu header: back, logo, order on the first row; Food / Bar / Shisha across the second */
+  .chrome { top: calc(6px + env(safe-area-inset-top)); left: 8px; right: 8px; border-radius: 24px; }
+  .topbar { grid-template-columns: auto 1fr auto; grid-template-areas: 'left . right' 'seg seg seg'; gap: var(--s-2); padding: var(--s-2) var(--s-3) 0; }
+  .topbar__left { grid-area: left; gap: var(--s-2); }
+  .topbar__right { grid-area: right; }
+  .topbar__logo { zoom: .72; }
+  .topbar__right .gbtn { padding: 0 var(--s-4); font-size: var(--fs-sm); }
+  .seg { grid-area: seg; justify-self: stretch; }
+  .seg__btn { flex: 1; min-height: 38px; padding: 0 var(--s-2); font-size: 12px; }
+  .cats { padding: var(--s-2) var(--s-3); }
+  .cat { min-height: 36px; padding: 0 var(--s-4); font-size: 13px; }
+  .scroll { padding: calc(186px + env(safe-area-inset-top)) var(--s-4) calc(100px + env(safe-area-inset-bottom)); }
+
+  /* Section headings */
+  .section { padding-top: var(--s-6); }
+  .section__head { margin-bottom: var(--s-5); }
+  .section__num { font-size: 26px; }
+  .section__kick-text { font-size: 19px; }
+  .section__orn { width: 150px; height: 18px; }
+  .section__title { font-size: clamp(50px, 15vw, 66px); padding: 0.1em 0.3em 0.18em; }
+  .menu-note { width: auto; text-align: center; border-radius: var(--r-md); padding: var(--s-2) var(--s-4); font-size: var(--fs-xs); }
+
+  /* Food: one dish per row, no stagger */
+  .dishes { grid-template-columns: 1fr; row-gap: var(--s-8); }
+  .dish:nth-child(even) { transform: none; }
+  .dishes:has(.dish:nth-child(even)) { padding-bottom: 0; }
+  .plate { width: min(76vw, 320px); }
+  .dish__text { margin-top: calc(var(--s-2) * -1); padding: 0 var(--s-2); }
+  .dish__name { font-size: 15px; letter-spacing: .1em; }
+  .garnish-wrap { max-width: 24vw; }
+  .priceadd { min-height: 50px; padding: 4px; }
+  .priceadd__price { font-size: var(--fs-md); padding: 0 var(--s-4); }
+  .priceadd__plus { width: 44px; }
+
+  /* Drinks + shisha: two per row */
+  .grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-8) var(--s-3); }
+  .card__img { height: 150px; }
+  .grid--shisha .card__img { height: 170px; }
+  .card__name { font-size: 13px; letter-spacing: .06em; }
+  .card__desc { font-size: var(--fs-xs); }
+  .tips { grid-template-columns: 1fr; gap: var(--s-3); }
+  .tip { padding: var(--s-4) var(--s-5); }
+  .tip h3 { font-size: var(--fs-md); }
+  .menu-end { margin-top: var(--s-10); font-size: var(--fs-xs); }
+
+  /* Dish pop-up: full width, picture on top, scrolls if long */
+  .veil { padding: calc(var(--s-3) + env(safe-area-inset-top)) var(--s-3) calc(var(--s-3) + env(safe-area-inset-bottom)); }
+  .modal { grid-template-columns: 1fr; overflow-y: auto; border-radius: var(--r-md); }
+  .modal__stage { min-height: 0; height: 40vh; padding: var(--s-4); }
+  .modal__stage .emblem-badge { zoom: .65; }
+  .modal__info { padding: var(--s-4) var(--s-5) var(--s-6); gap: var(--s-3); }
+  .modal__name { font-size: 30px; }
+  .modal__desc { font-size: var(--fs-sm); line-height: 1.55; }
+  .modal__close { top: var(--s-3); right: var(--s-3); }
+
+  /* Order panel: full width */
+  .sheet { top: calc(var(--s-2) + env(safe-area-inset-top)); left: var(--s-2); right: var(--s-2); bottom: calc(var(--s-2) + env(safe-area-inset-bottom)); width: auto; border-radius: var(--r-md); }
+  .sheet__head { padding: var(--s-4) var(--s-4) var(--s-2); }
+  .sheet__title { font-size: var(--fs-lg); letter-spacing: .18em; }
+  .sheet__list { padding: 0 var(--s-3); }
+  .line { grid-template-columns: 48px 1fr auto; gap: var(--s-2); }
+  .line__img { width: 48px; height: 48px; }
+  .sheet__foot { padding: var(--s-4); }
+  .total { font-size: var(--fs-lg); }
+
+  /* Waiter view */
+  .waiter { padding: var(--s-3); }
+  .waiter__head { padding: var(--s-5) var(--s-4) var(--s-3); flex-wrap: wrap; align-items: start; gap: var(--s-3); }
+  .waiter__head h2 { font-size: var(--fs-xl); letter-spacing: .16em; }
+  .waiter__list { padding: 0 var(--s-4); }
+  .wline { grid-template-columns: 36px 1fr auto; gap: var(--s-2); font-size: var(--fs-md); }
+  .waiter__foot { padding: var(--s-4); gap: var(--s-3); }
+}
