@@ -45,7 +45,9 @@ export function MenuScreen({ menuId, onBack, onSwitch, onOpenItem, onOpenOrder, 
 
   const goTo = (id: string) => {
     const el = scrollRef.current?.querySelector<HTMLElement>(`#sec-${id}`)
-    if (el && scrollRef.current) scrollRef.current.scrollTo({ top: el.offsetTop - CHROME_H + 8, behavior: 'smooth' })
+    // the glass header is shorter on the iPad than on a phone (two rows there): measure it
+    const chromeH = document.querySelector('.chrome')?.getBoundingClientRect().bottom ?? CHROME_H
+    if (el && scrollRef.current) scrollRef.current.scrollTo({ top: el.offsetTop - chromeH + 8, behavior: 'smooth' })
   }
 
   return (

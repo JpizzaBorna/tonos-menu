@@ -443,6 +443,95 @@ h1, h2, h3, p { margin: 0; }
   .cats { padding-left: var(--s-5); padding-right: var(--s-5); }
 }
 
+/* ───────────── Phone (guests opening tonos.website on their own phone) ─────────────
+   The iPad layout scaled down: one column of dishes, two columns of drinks, header on two rows. */
+@media (max-width: 600px) {
+  /* intro */
+  .intro { gap: var(--s-4); padding: 0 var(--s-4); }
+  .intro__emblem { zoom: 0.66; }
+  .intro__word { padding: var(--s-2) 0; }
+  .intro__word img { width: min(86vw, 340px) !important; height: auto !important; }
+  .intro__start-wrap { margin-top: var(--s-4); }
+  .gbtn--xl { min-height: 62px; padding: 0 var(--s-12); font-size: var(--fs-lg); }
+
+  /* picker: three compact cards, picture left, name right */
+  .picker { padding: var(--s-6) var(--s-4) var(--s-4); gap: var(--s-4); }
+  .picker__logo { zoom: 0.72; }
+  .picker__head p { font-size: var(--fs-xs); }
+  .picker__cards { gap: var(--s-4); }
+  .pick, .face { min-width: 0; }
+  .face { grid-template-columns: 104px minmax(0, 1fr); gap: var(--s-4); padding: var(--s-4) var(--s-5); }
+  .face__img { max-width: 100px; max-height: 110px; }
+  .face__img--photo { width: 96px; }
+  .face__title { font-size: 34px; letter-spacing: 0.14em; }
+  .face__sub { font-size: var(--fs-sm); line-height: 1.35; }
+  .face__go { margin-top: var(--s-2); min-height: 36px; padding: 0 var(--s-4); font-size: var(--fs-sm); }
+  .picker__foot { font-size: var(--fs-xs); }
+
+  /* header: back · logo · order on the first row, Food / Bar / Shisha on the second */
+  .chrome { top: 8px; left: 8px; right: 8px; border-radius: 24px; }
+  .topbar { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: 'left right' 'seg seg'; row-gap: var(--s-2); column-gap: var(--s-2); padding: var(--s-2) var(--s-3) 0; }
+  .topbar__left { grid-area: left; gap: var(--s-2); min-width: 0; }
+  .topbar__right { grid-area: right; }
+  .topbar__logo { gap: var(--s-2); min-width: 0; }
+  .topbar__logo .emblem-badge { zoom: 0.6; }
+  .topbar__logo img[alt='Tonos Greek Restaurant'] { height: auto !important; width: auto !important; max-width: 100%; max-height: 17px; }
+  .seg { grid-area: seg; justify-self: stretch; }
+  .seg__btn { flex: 1; min-height: 38px; padding: 0 var(--s-2); font-size: var(--fs-xs); }
+  .topbar .gbtn { min-height: 42px; }
+  .topbar .gbtn--icon { width: 42px; }
+  .topbar .cart-btn { padding: 0 var(--s-4); font-size: var(--fs-sm); }
+  .cats { padding: var(--s-2) var(--s-3); }
+  .cat { min-height: 36px; padding: 0 var(--s-4); font-size: 13px; }
+
+  /* content */
+  .scroll { padding: 172px var(--s-4) 96px; }
+  .section { padding-top: var(--s-6); }
+  .section__head { margin-bottom: var(--s-4); }
+  .section__num { font-size: 26px; }
+  .section__kick-text { font-size: 19px; }
+  .section__orn { width: 160px; height: 18px; }
+  .section__title { font-size: clamp(46px, 14vw, 60px); }
+  .menu-note { width: auto; text-align: center; border-radius: var(--r-md); font-size: var(--fs-xs); padding: var(--s-2) var(--s-4); }
+
+  /* food: one plate per row, no stagger */
+  .dishes { grid-template-columns: 1fr; row-gap: var(--s-8); }
+  .dish:nth-child(even) { transform: none; }
+  .dishes:has(.dish:nth-child(even)) { padding-bottom: 0; }
+  .plate { width: min(78vw, 320px); }
+  .dish__text { margin-top: calc(var(--s-2) * -1); }
+  .dish__name { font-size: 16px; letter-spacing: 0.1em; }
+  .garnish-wrap { zoom: 0.6; }
+
+  /* drinks & shisha: two per row */
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-8) var(--s-3); }
+  .card__img { height: 150px; }
+  .grid--shisha .card__img { height: 170px; }
+  .card__name { font-size: 13px; letter-spacing: 0.08em; }
+  .card .badge { font-size: 10px; letter-spacing: 0.05em; white-space: nowrap; padding: 3px 10px; }
+  .tips { grid-template-columns: 1fr; gap: var(--s-3); }
+  .menu-end { margin-top: var(--s-10); font-size: var(--fs-xs); }
+
+  /* item pop-up */
+  .veil { padding: var(--s-3); }
+  .modal { grid-template-columns: 1fr; max-height: 100%; overflow-y: auto; }
+  .modal__stage { min-height: 300px; padding: var(--s-4); }
+  .modal__info { padding: var(--s-2) var(--s-5) var(--s-6); gap: var(--s-3); }
+  .modal__name { font-size: 30px; }
+  .modal__desc { font-size: var(--fs-sm); }
+
+  /* order panel & waiter view */
+  .sheet { top: var(--s-2); right: var(--s-2); bottom: var(--s-2); left: var(--s-2); width: auto; }
+  .sheet__head { padding: var(--s-5) var(--s-5) var(--s-3); }
+  .sheet__title { font-size: var(--fs-lg); }
+  .waiter { padding: var(--s-3); }
+  .waiter__head { flex-wrap: wrap; padding: var(--s-6) var(--s-5) var(--s-3); }
+  .waiter__head h2 { font-size: var(--fs-xl); }
+  .waiter__list { padding: 0 var(--s-5); }
+  .wline { grid-template-columns: 40px 1fr auto; font-size: var(--fs-md); }
+  .waiter__foot { padding: var(--s-4) var(--s-5) var(--s-6); }
+}
+
 /* ───────────── Scroll-driven motion (runs on the iPad's scrolling engine: never lags, never jumps) ─────────────
    .surface  — items surface out of a soft blur as they enter and melt away as they leave (tied to scroll position)
    .drift    — garnish travels at ~50% of the scroll speed
