@@ -11,6 +11,7 @@ import { OrderPanel, WaiterView } from './screens/OrderPanel'
 import { FlyLayer } from './fx/FlyLayer'
 import { audioUnlocked, playIntroMusic, unlockAudio } from './fx/introSound'
 import { Welcome } from './screens/Welcome'
+import { OfflineStatus } from './ui/OfflineStatus'
 
 type Screen = { name: 'welcome' } | { name: 'intro' } | { name: 'picker' } | { name: 'menu'; id: MenuId }
 
@@ -69,6 +70,7 @@ function Tablet() {
       <OrderPanel open={orderOpen} onClose={() => setOrderOpen(false)} onWaiter={() => setWaiterOpen(true)} onReset={resetForNextGuest} />
       <WaiterView open={waiterOpen} onClose={() => setWaiterOpen(false)} onReset={resetForNextGuest} />
       <FlyLayer />
+      <OfflineStatus />
     </div>
   )
 }
