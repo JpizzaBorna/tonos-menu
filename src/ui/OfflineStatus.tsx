@@ -1,64 +1,43 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
+import { onProgress, saveMenuForOffline, type Progress } from '../offline'
 
 /**
- * Small glass pill (bottom centre) while the menu saves itself to the iPad on the first visit:
- * "Saving menu for offline… 45%" → "Ready offline ✓" (then it fades away). On later visits everything
- * is already saved, so nothing is shown. Also asks the browser to keep the saved files permanently.
+ * Small glass pill (bottom centre) while the menu saves its photos to the device:
+ * "Saving menu for offline… 45%" → "Ready offline ✓" (then it fades away).
+ * When everything is already saved (every later visit), nothing is shown at all.
+ * Also asks the browser to keep the saved files permanently.
  */
 export function OfflineStatus() {
-  const [pct, setPct] = useState<number | null>(null)
-  const [done, setDone] = useState(false)
+  const [p, setP] = useState<Progress | null>(null)
   const [hidden, setHidden] = useState(false)
+  const [sawProgress, setSawProgress] = useState(false)
 
   useEffect(() => {
-    if (!('serviceWorker' in navigator) || !('caches' in window) || import.meta.env.DEV) return
+    if (!('caches' in window) || import.meta.env.DEV) return
     void navigator.storage?.persist?.().catch(() => {})
-    let total = 0
-    let alive = true
-    let sawProgress = false // true once we showed "Saving…" this visit
-    let timer: number | undefined
-
-    const count = async () => {
-      let n = 0
-      for (const k of await caches.keys()) if (k.includes('precache')) n += (await (await caches.open(k)).keys()).length
-      return n
-    }
-    const tick = async () => {
-      if (!alive) return
-      try {
-        if (!total) {
-          const sw = await fetch('./sw.js', { cache: 'no-store' }).then((r) => r.text())
-          total = (sw.match(/url:"/g) || []).length
-        }
-        const n = await count()
-        const reg = await navigator.serviceWorker.getRegistration()
-        // the worker only becomes active after EVERY file is saved, so "active, nothing installing" = fully offline-ready
-        const ready = !!reg?.active && !reg.installing && !reg.waiting
-        if (ready) {
-          setDone(true)
-          // first visit: show "ready" for a moment; already-saved visits: never show anything
-          if (!sawProgress) setHidden(true)
-          else timer = window.setTimeout(() => setHidden(true), 3500)
-          return
-        }
-        if (total) {
-          sawProgress = true
-          setPct(Math.min(99, Math.round((n / total) * 100)))
-        }
-      } catch {
-        /* offline or not ready yet: try again */
-      }
-      timer = window.setTimeout(tick, 1000)
-    }
-    void tick()
+    const off = onProgress((next) => {
+      if (!next.total) return
+      setP(next)
+      if (!next.done) setSawProgress(true)
+    })
+    // let the first screen draw and the app files arrive before photos start downloading
+    const t = window.setTimeout(() => void saveMenuForOffline(), 1200)
     return () => {
-      alive = false
-      window.clearTimeout(timer)
+      off()
+      window.clearTimeout(t)
     }
   }, [])
 
-  const show = !hidden && (pct !== null || done)
+  useEffect(() => {
+    if (!p?.done) return
+    if (!sawProgress) return setHidden(true)
+    const t = window.setTimeout(() => setHidden(true), 3500)
+    return () => window.clearTimeout(t)
+  }, [p?.done, sawProgress])
+
+  const pct = p ? Math.min(99, Math.floor((p.saved / Math.max(1, p.total)) * 100)) : 0
+  const show = !hidden && !!p && (sawProgress || !p.done)
   return (
     <AnimatePresence>
       {show && (
@@ -69,14 +48,14 @@ export function OfflineStatus() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 16 }}
         >
-          {done ? (
+          {p!.done ? (
             <>Ready offline ✓</>
           ) : (
             <>
               <span className="offline-pill__bar">
-                <span style={{ width: `${pct ?? 0}%` }} />
+                <span style={{ width: `${pct}%` }} />
               </span>
-              Saving menu for offline… {pct ?? 0}%
+              Saving menu for offline… {pct}%
             </>
           )}
         </motion.div>

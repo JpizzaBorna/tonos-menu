@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, useSyncExternalStore } from 'react'
 import { AnimatePresence, MotionConfig } from 'motion/react'
 import { type Item, type MenuId } from './data'
 import { OrderProvider, useOrder } from './order'
@@ -12,6 +12,7 @@ import { FlyLayer } from './fx/FlyLayer'
 import { audioUnlocked, playIntroMusic, unlockAudio } from './fx/introSound'
 import { Welcome } from './screens/Welcome'
 import { OfflineStatus } from './ui/OfflineStatus'
+import { isLite, probeFrameRate, subscribeLite } from './perf'
 
 type Screen = { name: 'welcome' } | { name: 'intro' } | { name: 'picker' } | { name: 'menu'; id: MenuId }
 
@@ -35,6 +36,11 @@ function Tablet() {
   const closeItem = useCallback(() => setItem(null), [])
 
   const resetForNextGuest = () => {
+    // a newer menu was published in the admin panel: reload now (instant, everything is saved on the device)
+    if ((window as Window & { tonosMenuUpdated?: boolean }).tonosMenuUpdated) {
+      try { localStorage.removeItem('tonos-order-v1') } catch { /* ignore */ }
+      return location.reload()
+    }
     reset()
     setWaiterOpen(false)
     setOrderOpen(false)
@@ -80,8 +86,11 @@ function Tablet() {
 }
 
 export default function App() {
+  // old / slow device: Motion keeps fades only (no blur, scale or slide effects)
+  const lite = useSyncExternalStore(subscribeLite, isLite)
+  useEffect(() => probeFrameRate(), [])
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig reducedMotion={lite ? 'always' : 'user'}>
       <OrderProvider>
         <Tablet />
       </OrderProvider>

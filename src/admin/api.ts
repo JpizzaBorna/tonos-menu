@@ -53,12 +53,12 @@ export async function loadVersion(id: number) {
 }
 
 /**
- * Photo upload: resized in the browser (max 1600 px) and saved as WebP.
+ * Photo upload: resized in the browser (max 1000 px) and saved as WebP.
  * Transparent PNG cut-outs keep their transparency and show without a frame in the menu.
  */
 export async function uploadPhoto(file: File, menuId: string, itemId: string, view: string): Promise<NonNullable<Img>> {
   const bmp = await createImageBitmap(file)
-  const scale = Math.min(1, 1600 / Math.max(bmp.width, bmp.height))
+  const scale = Math.min(1, 1000 / Math.max(bmp.width, bmp.height))
   const w = Math.round(bmp.width * scale)
   const h = Math.round(bmp.height * scale)
   const canvas = document.createElement('canvas')
@@ -76,10 +76,16 @@ export async function uploadPhoto(file: File, menuId: string, itemId: string, vi
       if (px[(y * w + x) * 4 + 3] < 20) clear++
     }
   const cutout = clear / n > 0.08
-  const blob: Blob = await new Promise((res, rej) => canvas.toBlob((b) => (b ? res(b) : rej(new Error('Could not read this image'))), 'image/webp', 0.88))
+  const encode = (type: string, q?: number) =>
+    new Promise<Blob>((res, rej) => canvas.toBlob((b) => (b ? res(b) : rej(new Error('Could not read this image'))), type, q))
+  // WebP where the browser can make it; older Safari silently returns PNG instead, so fall back to
+  // JPEG (photos) or PNG (transparent cut-outs) and label the file correctly
+  let blob = await encode('image/webp', 0.8)
+  if (blob.type !== 'image/webp') blob = cutout ? await encode('image/png') : await encode('image/jpeg', 0.82)
+  const ext = blob.type === 'image/webp' ? 'webp' : blob.type === 'image/png' ? 'png' : 'jpg'
   if (DEMO) return { src: URL.createObjectURL(blob), cutout }
-  const path = `${menuId}/${itemId}-${view}-${Date.now()}.webp`
-  const { error } = await sb.storage.from(PHOTO_BUCKET).upload(path, blob, { contentType: 'image/webp', cacheControl: '31536000', upsert: false })
+  const path = `${menuId}/${itemId}-${view}-${Date.now()}.${ext}`
+  const { error } = await sb.storage.from(PHOTO_BUCKET).upload(path, blob, { contentType: blob.type, cacheControl: '31536000', upsert: false })
   if (error) throw error
   return { src: sb.storage.from(PHOTO_BUCKET).getPublicUrl(path).data.publicUrl, cutout }
 }

@@ -197,13 +197,18 @@ h1, h2, h3, p { margin: 0; }
 
 /* ───────────── Backdrop ───────────── */
 .backdrop { position: fixed; inset: 0; overflow: hidden; background: radial-gradient(120% 90% at 20% 0%, #0c2532, #061620 55%, #030b10); }
-.backdrop__blob { position: absolute; border-radius: 50%; filter: blur(60px); opacity: 0.28; will-change: transform; }
+.backdrop__blob { position: absolute; opacity: 0.32; will-change: transform; }
+@keyframes pool1 { 0%,100% { transform: none; } 33% { transform: translate(200px,110px) scale(1.25); } 66% { transform: translate(90px,230px) scale(.9); } }
+@keyframes pool2 { 0%,100% { transform: none; } 33% { transform: translate(-230px,-150px) scale(1.25); } 66% { transform: translate(-90px,50px) scale(.9); } }
+@keyframes pool3 { 0%,100% { transform: none; } 33% { transform: translate(-150px,170px) scale(1.25); } 66% { transform: translate(-40px,90px) scale(.9); } }
+@keyframes pool4 { 0%,100% { transform: none; } 33% { transform: translate(180px,-120px) scale(1.25); } 66% { transform: translate(280px,-30px) scale(.9); } }
 .backdrop__beam { position: absolute; left: -10vw; width: 34vw; height: 190vh; background: linear-gradient(90deg, transparent, rgba(255,246,230,.035) 25%, rgba(255,246,230,.075) 50%, rgba(255,246,230,.035) 75%, transparent); filter: blur(40px); will-change: transform, opacity; }
 .backdrop__waves { position: absolute; left: 0; bottom: 4%; width: 200%; height: 22vh; overflow: visible; }
 .backdrop__photo-wrap { position: absolute; left: 0; top: 0; width: 100%; height: 165%; will-change: transform; transform: translateZ(0); }
 .backdrop__photo { width: 100%; height: 100%; object-fit: cover; opacity: 0.2; animation: kenburns 80s ease-in-out infinite alternate; will-change: transform; }
 @keyframes kenburns { from { transform: scale(1.08) translate3d(-1.5%, 0, 0); } to { transform: scale(1.16) translate3d(1.5%, 0, 0); } }
-.garnish { position: absolute; opacity: 0.88; filter: drop-shadow(0 18px 22px rgba(0,0,0,.55)) saturate(.95) brightness(.92); pointer-events: none; will-change: transform; }
+.garnish { position: absolute; opacity: 0.88; filter: drop-shadow(0 18px 22px rgba(0,0,0,.55)) saturate(.95) brightness(.92); pointer-events: none; will-change: transform; transform: rotate(var(--rot)); animation: garnish-sway 16s ease-in-out infinite; }
+@keyframes garnish-sway { 50% { transform: translateY(-8px) rotate(calc(var(--rot) + 2deg)); } }
 .glass-skin { position: absolute; inset: 0; box-sizing: border-box; pointer-events: none; z-index: 0; }
 .pick--skinned { position: relative; border-radius: 40px; -webkit-backdrop-filter: blur(4px) saturate(150%); backdrop-filter: blur(4px) saturate(150%); filter: drop-shadow(0 30px 40px rgba(0,0,0,.5)); }
 .pick--skinned .face { z-index: 1; }
@@ -532,6 +537,72 @@ h1, h2, h3, p { margin: 0; }
   .waiter__foot { padding: var(--s-4) var(--s-5) var(--s-6); }
 }
 
+/* ───────────── Phone on its side (wide but short screen) ─────────────
+   One compact header row, smaller plates, four drinks per row, the three menu cards side by side. */
+@media (orientation: landscape) and (max-height: 520px) {
+  .intro { gap: var(--s-2); }
+  .intro__emblem { zoom: 0.45; }
+  .intro__word img { height: 54px !important; }
+  .intro__start-wrap { margin-top: var(--s-2); }
+  .gbtn--xl { min-height: 52px; padding: 0 var(--s-10); font-size: var(--fs-lg); }
+  .welcome__orb { zoom: 0.7; }
+
+  .picker { padding: var(--s-3) var(--s-6); gap: var(--s-3); }
+  .picker__logo { zoom: 0.6; }
+  .picker__head p { font-size: var(--fs-xs); }
+  .picker__cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-4); }
+  .face { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; padding: var(--s-3); gap: var(--s-1); }
+  .face__body { justify-items: center; text-align: center; padding-top: var(--s-1); }
+  .face__img { max-height: 110px; }
+  .face__title { font-size: 28px; letter-spacing: 0.14em; }
+  .face__sub { font-size: var(--fs-xs); }
+  .face__go { margin-top: var(--s-1); min-height: 32px; font-size: var(--fs-xs); padding: 0 var(--s-3); }
+  .picker__foot { display: none; }
+
+  .chrome { top: 6px; left: 8px; right: 8px; border-radius: 22px; }
+  .topbar { padding: var(--s-1) var(--s-3) 0; gap: var(--s-3); }
+  .topbar__logo .emblem-badge { zoom: 0.6; }
+  .topbar__logo img[alt='Tonos Greek Restaurant'] { height: 18px !important; }
+  .topbar .gbtn { min-height: 38px; }
+  .topbar .gbtn--icon { width: 38px; }
+  .seg__btn { min-height: 34px; padding: 0 var(--s-4); font-size: var(--fs-xs); }
+  .cats { padding: var(--s-1) var(--s-3) var(--s-2); }
+  .cat { min-height: 32px; font-size: 13px; }
+  .scroll { padding: 112px var(--s-8) 72px; }
+  .section { padding-top: var(--s-4); }
+  .section__head { margin-bottom: var(--s-4); }
+  .section__num { font-size: 24px; }
+  .section__kick-text { font-size: 18px; }
+  .section__title { font-size: 52px; }
+  .plate { width: min(34vw, 260px); }
+  .dish__name { font-size: 15px; }
+  .dishes:has(.dish:nth-child(even)) { padding-bottom: 140px; }
+  .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-6) var(--s-3); }
+  .card__img, .grid--shisha .card__img { height: 140px; }
+  .card__name { font-size: 13px; }
+  .garnish { width: 15vw !important; }
+
+  .veil { padding: var(--s-2); }
+  .modal { grid-template-columns: 1fr 1fr; }
+  .modal__stage { min-height: 0; padding: var(--s-3); }
+  .modal__info { padding: var(--s-5) var(--s-5) var(--s-5) 0; gap: var(--s-2); overflow-y: auto; }
+  .modal__name { font-size: 26px; }
+  .modal__desc { font-size: var(--fs-sm); }
+  .sheet { top: var(--s-2); bottom: var(--s-2); right: var(--s-2); }
+  .sheet__head { padding: var(--s-3) var(--s-5) var(--s-2); }
+}
+
+/* ───────────── TV and big screens ───────────── */
+@media (min-width: 1600px) and (min-height: 800px) {
+  .dishes { max-width: 1400px; }
+  .plate { width: clamp(300px, 30vw, 540px); }
+  .grid { max-width: 1400px; grid-template-columns: repeat(4, 1fr); }
+  .card__img { height: 260px; }
+  .grid--shisha .card__img { height: 290px; }
+  .dish__name { font-size: 20px; }
+  .card__name { font-size: 18px; }
+}
+
 /* ───────────── Scroll-driven motion (runs on the iPad's scrolling engine: never lags, never jumps) ─────────────
    .surface  — items surface out of a soft blur as they enter and melt away as they leave (tied to scroll position)
    .drift    — garnish travels at ~50% of the scroll speed
@@ -556,6 +627,27 @@ h1, h2, h3, p { margin: 0; }
   .backdrop__photo-wrap.is-scroll-driven { animation: bgpar linear both; animation-timeline: --menu; }
   @keyframes bgpar { from { transform: translateY(0); } to { transform: translateY(-55vh); } }
 }
+
+/* ───────────── Light mode: old iPads, smart TVs, slow phones (switched on by src/perf.ts) ─────────────
+   Same design, but nothing the old graphics chip struggles with: solid tinted glass instead of live blur,
+   a still background, and no soft shadows under the pictures. */
+html.lite .glass, html.lite .glass--bar, html.lite .glass--clear, html.lite .glass--melt, html.lite .glass--card,
+html.lite .glass--aegean, html.lite .glass--gold, html.lite .glass--teal, html.lite .glass--melt > .frost,
+html.lite .priceadd, html.lite .pick--skinned, html.lite .veil, html.lite .waiter, html.lite .glass--dark {
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+html.lite .glass, html.lite .glass--clear, html.lite .glass--melt { background: linear-gradient(160deg, rgba(60,95,120,.55), rgba(25,50,68,.6)); }
+html.lite .glass--bar { background: linear-gradient(180deg, rgba(14,34,50,.94), rgba(12,30,44,.9)); }
+html.lite .glass--dark, html.lite .modal, html.lite .sheet, html.lite .waiter__card { background: linear-gradient(160deg, rgba(18,44,60,.97), rgba(10,28,40,.97)); }
+html.lite .veil { background: rgba(4,14,20,.82); }
+html.lite .waiter { background: rgba(4,14,20,.9); }
+html.lite .backdrop__blob, html.lite .backdrop__photo, html.lite .garnish { animation: none; }
+html.lite .backdrop__photo-wrap { transform: none !important; animation: none !important; }
+html.lite .plate__cut, html.lite .card__img img, html.lite .face__img, html.lite .garnish, html.lite .garnish-item,
+html.lite .modal__img, html.lite .section__title, html.lite .pick--skinned, html.lite .pricepill, html.lite .fly,
+html.lite .priceadd__plus, html.lite .modal__stage-glow, html.lite .face__glow { filter: none; }
+html.lite .surface, html.lite .drift { animation: none !important; }
+html.lite .garnish-wrap { display: none; }
 
 /* "Saving menu for offline… 45%" pill, first visit only */
 .offline-pill { position: fixed; z-index: 70; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom)); translate: -50% 0; display: flex; align-items: center; gap: var(--s-3); padding: 10px 18px; border-radius: var(--r-pill); font-size: var(--fs-sm); font-weight: 500; color: #fff; white-space: nowrap; pointer-events: none; }

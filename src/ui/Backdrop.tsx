@@ -8,10 +8,10 @@ import { asset, backgroundPhoto, decor } from '../data'
  * Only transform/opacity are animated, so it stays smooth on iPad.
  */
 const POOLS = [
-  { c: '#1f4f86', w: 820, x: '-20%', y: '-28%', path: { x: [0, 200, 90, 0], y: [0, 110, 230, 0] }, d: 46 },
-  { c: '#1d5a57', w: 700, x: '55%', y: '45%', path: { x: [0, -230, -90, 0], y: [0, -150, 50, 0] }, d: 52 },
-  { c: '#5a4a2a', w: 520, x: '70%', y: '-22%', path: { x: [0, -150, -40, 0], y: [0, 170, 90, 0] }, d: 58 },
-  { c: '#3b3478', w: 600, x: '-8%', y: '55%', path: { x: [0, 180, 280, 0], y: [0, -120, -30, 0] }, d: 64 },
+  { c: '#1f4f86', w: 820, x: '-20%', y: '-28%', anim: 'pool1', d: 46 },
+  { c: '#1d5a57', w: 700, x: '55%', y: '45%', anim: 'pool2', d: 52 },
+  { c: '#5a4a2a', w: 520, x: '70%', y: '-22%', anim: 'pool3', d: 58 },
+  { c: '#3b3478', w: 600, x: '-8%', y: '55%', anim: 'pool4', d: 64 },
 ]
 
 export function Backdrop() {
@@ -19,17 +19,15 @@ export function Backdrop() {
     <div className="backdrop" aria-hidden>
       <SantoriniPhoto />
       {POOLS.map((b, i) => (
-        <motion.div
+        // drifting colour pools: CSS animations (run off the main thread), soft edges come from the gradient itself
+        <div
           key={i}
           className="backdrop__blob"
-          style={{ background: `radial-gradient(circle at 40% 40%, ${b.c}, transparent 68%)`, width: b.w, height: b.w, left: b.x, top: b.y }}
-          animate={{ ...b.path, scale: [1, 1.25, 0.9, 1] }}
-          transition={{ duration: b.d, repeat: Infinity, ease: 'easeInOut' }}
+          style={{ background: `radial-gradient(circle closest-side, ${b.c}, transparent)`, width: b.w, height: b.w, left: b.x, top: b.y, animation: `${b.anim} ${b.d}s ease-in-out infinite` }}
         />
       ))}
 
       <Garnish />
-      <div className="backdrop__grain" />
     </div>
   )
 }
@@ -69,14 +67,12 @@ function Garnish() {
         const slug = c.slugs.find((s) => d[s])
         if (!slug) return null
         return (
-          <motion.img
+          <img
             key={i}
             className="garnish"
             src={asset(d[slug])}
             alt=""
-            style={{ ...c.style, rotate: c.rot }}
-            animate={{ y: [0, -8, 0], rotate: [c.rot, c.rot + 2, c.rot] }}
-            transition={{ duration: 16 + i * 4, repeat: Infinity, ease: 'easeInOut' }}
+            style={{ ...c.style, ['--rot' as string]: `${c.rot}deg`, animationDuration: `${16 + i * 4}s` }}
           />
         )
       })}

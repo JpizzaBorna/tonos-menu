@@ -1,0 +1,46 @@
+# Tonos Greek Restaurant menu - tonos.website -> /srv/sites/tonos/dist (static Vite build, no server program)
+# The menu data and admin login live in Supabase, so there is nothing saved on this server.
+(tonos_site) {
+	encode zstd gzip
+	root * /srv/sites/tonos/dist
+	# the page, the offline worker and the app manifest are always re-checked, so an update shows up at once
+	@fresh path / /index.html /sw.js /registerSW.js /manifest.webmanifest /ipad.html /admin /admin/ /admin/index.html
+	header @fresh Cache-Control "no-cache"
+	# built scripts, styles and fonts never change under the same name
+	@hashed path /assets/* /workbox-*.js
+	header @hashed Cache-Control "public, max-age=31536000, immutable"
+	# photos, icons and the intro sound (also saved on the device by the menu itself)
+	@media path /media/* /icons/* /sound/*
+	header @media Cache-Control "public, max-age=2592000, stale-while-revalidate=604800"
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+	# photos, code and sounds: a missing file is a real 404 (never the menu page, so it is never saved as a photo)
+	@files path /media/* /assets/* /icons/* /sound/* /workbox-*.js
+	handle @files {
+		file_server
+	}
+	# everything else (/, /admin, /#food ...): the page itself
+	handle {
+		try_files {path} {path}/index.html /index.html
+		file_server
+	}
+}
+
+tonos.website {
+	import tonos_site
+	log {
+		output file /var/log/caddy/tonos.log {
+			roll_size 10MiB
+			roll_keep 5
+		}
+	}
+}
+
+www.tonos.website {
+	redir https://tonos.website{uri} permanent
+}
