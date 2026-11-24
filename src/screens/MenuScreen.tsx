@@ -123,7 +123,7 @@ export function MenuScreen({ menuId, onBack, onSwitch, onOpenItem, onOpenOrder, 
               </div>
             </section>
           )}
-          <p className="menu-end">TONOS · GREEK RESTAURANT</p>
+          <p className="menu-end">TONOS · RESTAURANT &amp; SHISHA LOUNGE</p>
         </motion.div>
       </AnimatePresence>
     </motion.section>

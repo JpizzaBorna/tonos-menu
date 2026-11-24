@@ -6,7 +6,7 @@ const EASE = [0.22, 1, 0.36, 1] as const
 
 /**
  * Opening with the real Tonos logo: the blue tuna emblem rolls in and settles,
- * the TONOS / GREEK RESTAURANT wordmark is unveiled left to right with a light sweep,
+ * the TONOS / RESTAURANT & SHISHA LOUNGE wordmark is unveiled left to right with a light sweep,
  * then the START button appears. Timed to the opening music (hit at ~1.1 s).
  */
 export function Intro({ onStart }: { onStart: () => void }) {

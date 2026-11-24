@@ -24,9 +24,9 @@ export default defineConfig({
       injectRegister: 'auto',
       includeAssets: ['icons/*.png', 'sound/*'],
       manifest: {
-        name: 'Tonos Greek Restaurant – Menu',
+        name: 'Tonos Restaurant & Shisha Lounge – Menu',
         short_name: 'Tonos Menu',
-        description: 'Tonos Greek Restaurant digital menu',
+        description: 'Tonos Restaurant & Shisha Lounge digital menu',
         start_url: './',
         scope: './',
         display: 'fullscreen',

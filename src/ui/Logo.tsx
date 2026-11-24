@@ -3,7 +3,7 @@ import { DATA, asset } from '../data'
 
 /*
  * The real Tonos logo, recreated from the storefront sign:
- * a blue tuna ("tonos") in a Greek-key ring with waves, and the TONOS / GREEK RESTAURANT wordmark.
+ * a blue tuna ("tonos") in a Greek-key ring with waves, and the TONOS / RESTAURANT & SHISHA LOUNGE wordmark.
  * On the dark menu it is used like the sign: blue emblem + white wordmark.
  */
 const L = DATA.logo ?? {}
@@ -23,7 +23,7 @@ export function LogoEmblem({ size = 120, ...rest }: { size?: number } & HTMLMoti
 export function LogoWord({ height = 48, ...rest }: { height?: number } & HTMLMotionProps<'img'>) {
   const src = (L as Record<string, string | undefined>).word_white
   if (!src) return <span style={{ fontSize: height * 0.8, letterSpacing: '0.1em' }}>TONOS</span>
-  return <motion.img src={asset(src)} alt="Tonos Greek Restaurant" style={{ height, width: 'auto', display: 'block' }} draggable={false} {...rest} />
+  return <motion.img src={asset(src)} alt="Tonos Restaurant & Shisha Lounge" style={{ height, width: 'auto', display: 'block' }} draggable={false} {...rest} />
 }
 
 export const wordSrc = () => {
